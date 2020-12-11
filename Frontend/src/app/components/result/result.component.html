@@ -1,0 +1,61 @@
+
+        
+<!-- <div *ngFor = "let item of results">
+{{item.original_title}}
+</div> -->
+<!-- <h1 style="margin-left: 35%;">Search Results </h1>
+<div class="col-md-6 __web-inspector-hide-shortcut__ " style="margin-left: 20%; margin-top: 5rem;" *ngFor = "let item of results">  
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        
+        <h3 class="mb-0">{{item.original_title}}</h3>
+        <h5 class="mb-1"> vote_average : {{item.vote_average}}</h5>
+        <p class="card-text mb-auto">Description : {{item.overview}}</p>
+       <h6>release_date : {{item.release_date}}</h6>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+          <img class="img-fluid img-thumbnail"  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{item.poster_path}}" alt="">
+              </div>
+    </div>
+  </div> -->
+
+  <!-- Card -->
+  <h1 style="margin-left: 35%;">Search Results </h1>
+  <div class="card promoting-card" *ngFor = "let item of results" style="width :40% ;margin-left: 25%;margin-top: 2%;">
+
+    <!-- Card content -->
+    <div class="card-body d-flex flex-row">
+  
+      <!-- Avatar -->
+      <!-- <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle mr-3" height="50px" width="50px" alt="avatar"> -->
+  
+      <!-- Content -->
+      <div>
+  
+        <!-- Title -->
+        <h4 class="card-title font-weight-bold mb-2">{{item.original_title}}</h4>
+        <!-- Subtitle -->
+        <h5 class="mb-1"> vote_average : {{item.vote_average}}</h5>
+
+
+  
+      </div>
+  
+    </div>
+  
+    <!-- Card image -->
+    <div class="view overlay">
+      <img class="card-img-top rounded-0"style="width :40%; height:50%; margin-left :20%" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{item.poster_path}}" alt="Card image cap">
+      <div class="card-body d-flex flex-row">
+      <h6 class="mb-1" style="margin-top: 10px;">release date : {{item.release_date}}</h6>
+      <!-- <p class="mb-1">Description : {{item.overview}}</p> -->
+
+</div>
+<p class="card-body">Description : {{item.overview}}</p>
+
+    </div>
+  
+
+  
+  </div>
+  <!-- Card -->
